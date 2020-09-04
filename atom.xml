@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oldfor.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-03T07:05:18.928Z</updated>
+    <updated>2020-09-04T03:17:16.615Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oldfor.github.io"/>
     <link rel="self" href="https://oldfor.github.io/atom.xml"/>
@@ -10,6 +10,83 @@
     <logo>https://oldfor.github.io/images/avatar.png</logo>
     <icon>https://oldfor.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[QML学习1]]></title>
+        <id>https://oldfor.github.io/post/qml-xue-xi-1/</id>
+        <link href="https://oldfor.github.io/post/qml-xue-xi-1/">
+        </link>
+        <updated>2020-09-04T03:16:53.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="qt_qml_stu1">QT_QML_stu1</h1>
+<h2 id="qml语言简介">qml语言简介</h2>
+<p>类似html语言的作用，用于Qt程序的界面设计，可以和css、js、C++交互<br>
+qml语言形式上 类似json</p>
+<h2 id="基本知识">基本知识：</h2>
+<h3 id="一个标准的qml界面语句">一个标准的qml界面语句</h3>
+<pre><code>import QtQuick 2.9
+import QtQuick.Window 2.2
+
+Window {
+    visible: true
+    width: 640
+    height: 480
+    title: qsTr(&quot;Hello World&quot;)
+
+    MouseArea{
+        anchors.fill: parent
+        onClicked: {
+            Qt.quit()
+        }
+    }
+    Text{
+        id:text1
+        text: qsTr(&quot;hello qml&quot;)
+        anchors.centerIn: parent
+    }
+}
+
+</code></pre>
+<h3 id="结构">结构：</h3>
+<pre><code>基本结构：
+	- import区域 : 一般写在前面几行 ：引用类型有：
+		- 包含类型的全面空间
+        - 包含QML代码文件目录
+        - js代码文件
+	- declaration区域
+</code></pre>
+<h3 id="语法">语法</h3>
+<ul>
+<li>引用语句<br>
+<code>import name version</code></li>
+<li>一般语句 - 由大括号嵌套,形成层级关系</li>
+<li>注释语句
+<ul>
+<li>单行 //</li>
+<li>多行 /<em>...</em>/</li>
+</ul>
+</li>
+<li>模块申明</li>
+</ul>
+<h4 id="知识点">知识点</h4>
+<pre><code>Rectangle{
+    //元素大小
+    width:x
+    height:y
+    //坐标
+    x : x 
+    y : y
+    //color
+    color : &quot;red&quot;
+    
+    Text{
+        //父元素子元素形成包裹关系
+        id:test
+        //使用parent来和父元素交互
+        anchor.left : parent.left 
+    }
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[123132]]></title>
         <id>https://oldfor.github.io/post/123132/</id>
