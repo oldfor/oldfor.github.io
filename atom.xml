@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oldfor.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-04T05:35:34.358Z</updated>
+    <updated>2020-09-04T08:55:51.279Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oldfor.github.io"/>
     <link rel="self" href="https://oldfor.github.io/atom.xml"/>
@@ -83,8 +83,27 @@ Window {
         //使用parent来和父元素交互
         anchor.left : parent.left 
     }
+    
 }
 </code></pre>
+<ul>
+<li>
+<p>anchors 锚  可以用来进行关系定位</p>
+<ul>
+<li>anchors.left/right/top/bottom : parents.left (关系定位)</li>
+<li>anchors.leftMargin...（关系定位间距）</li>
+</ul>
+</li>
+<li>
+<p>Positioners 定位器：用于元素组合</p>
+<ul>
+<li>Column 列</li>
+<li>Row   行</li>
+<li>Grid  网格</li>
+<li>Flow  流</li>
+</ul>
+</li>
+</ul>
 ]]></content>
     </entry>
     <entry>
